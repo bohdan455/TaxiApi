@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationService", "LocationService\LocationService.csproj", "{567D6B81-772D-4B96-AC6F-93593CDFE1C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationService.Common", "LocationService.Common\LocationService.Common.csproj", "{36E94926-0029-4289-BFDC-CDB23637D440}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{567D6B81-772D-4B96-AC6F-93593CDFE1C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{567D6B81-772D-4B96-AC6F-93593CDFE1C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{567D6B81-772D-4B96-AC6F-93593CDFE1C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E94926-0029-4289-BFDC-CDB23637D440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E94926-0029-4289-BFDC-CDB23637D440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E94926-0029-4289-BFDC-CDB23637D440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E94926-0029-4289-BFDC-CDB23637D440}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
