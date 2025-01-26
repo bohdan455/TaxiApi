@@ -2,8 +2,11 @@
 
 namespace LocationService.Requests;
 
-public class GeoLocation
+public class DriverLocationRequest
 {
+    [Required]
+    public string DriverId { get; set; }
+    
     [Range(-90, 90)]
     public double Latitude { get; set; }
     

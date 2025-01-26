@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\LocationService.Common\LocationService.Common.csproj" />
+      <ProjectReference Include="..\LocationService.Services\LocationService.Services.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,3 +1,6 @@
+using LocationService.Services.Services.Interfaces;
+using StackExchange.Redis;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +8,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IDatabase>(cfg =>
+{
+    IConnectionMultiplexer multiplexer = ConnectionMultiplexer.Connect($"{builder.Configuration["Redis:Url"]}");
+    return multiplexer.GetDatabase();
+});
+
+builder.Services.AddScoped<ILocationService, LocationService.Services.Services.LocationService>();
 
 var app = builder.Build();
 
