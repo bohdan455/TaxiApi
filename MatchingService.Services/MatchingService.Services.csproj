@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NRedisStack" Version="0.13.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MatchingService.Common\MatchingService.Common.csproj" />
+    </ItemGroup>
+
+</Project>
